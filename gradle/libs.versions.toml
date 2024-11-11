@@ -35,7 +35,7 @@ commons-text = "1.11.0"
 
 geoip = "4.2.0"
 jackson = "2.18.1"
-maxmind-db = "3.1.0"
+maxmind-db = "3.1.1"
 
 caffeine = "3.1.8"
 
