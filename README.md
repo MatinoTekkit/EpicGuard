@@ -1,11 +1,14 @@
 # 🛡 EpicGuard [![GitHub stars](https://img.shields.io/github/stars/4drian3d/EpicGuard)](https://github.com/4drian3d/EpicGuard/stargazers) [![GitHub forks](https://img.shields.io/github/forks/4drian3d/EpicGuard)](https://github.com/4drian3d/EpicGuard/network) [![GitHub issues](https://img.shields.io/github/issues/4drian3d/EpicGuard)](https://github.com/4drian3d/EpicGuard/issues) [![GitHub license](https://img.shields.io/github/license/4drian3d/EpicGuard)](https://github.com/4drian3d/EpicGuard/blob/master/LICENSE) [![Java CI](https://github.com/4drian3d/EpicGuard/actions/workflows/gradle.yml/badge.svg)](https://github.com/4drian3d/EpicGuard/actions/workflows/gradle.yml)
 A simple AntiBot plugin for newest Minecraft versions.
 
+> [!IMPORTANT]
+> This version of EpicGuard has been discontinued; the last published version will be 7.6.1.
+> I don't feel that I am the developer this project needs.
+> Any other developer can take over the project, just as I did when I forked the original project.
+
 ## ✅ Supported platforms / Latest release requirements
 * [Paper 1.20.1+](https://papermc.io/) *(all paper forks are supported)*
-* [Velocity 3.2+](https://velocitypowered.com/)
-* Waterfall
-* [Sponge](https://spongepowered.org/) (soon)
+* [Velocity 3.4+](https://velocitypowered.com/)
 * Java **21**
 
 [![](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_46h.png)](https://modrinth.com/plugin/epicguard)
@@ -30,15 +33,15 @@ A simple AntiBot plugin for newest Minecraft versions.
 To be able to use commands, give yourself the **epicguard.admin** permission.  
 On different platforms there are additional aliases available, such as **/guardvelocity** or **/epicguardpaper**
 
-| Command                                      | Description                                                            |
-|----------------------------------------------|------------------------------------------------------------------------|
-| /guard help                                  | Displays all available commands.                                       |
-| /guard reload                                | Reloads config and messages.                                           |
-| /guard whitelist <add/remove> <nick/address> | Whitelist/unwhitelist an address or nickname.                          |
-| /guard blacklist <add/remove> <nick/address> | Blacklist/unblacklist an address or nickname.                          |
-| /guard analyze <nick/address>                | Displays detailed information about the specified address or nickname. |
-| /guard status                                | Toggles live attack information on actionbar.                          |
-| /guard save                                  | Forces save to the database.                                           |
+| Command                                          | Description                                                            |
+|--------------------------------------------------|------------------------------------------------------------------------|
+| /epicguard help                                  | Displays all available commands.                                       |
+| /epicguard reload                                | Reloads config and messages.                                           |
+| /epicguard whitelist <add/remove> <nick/address> | Whitelist/unwhitelist an address or nickname.                          |
+| /epicguard blacklist <add/remove> <nick/address> | Blacklist/unblacklist an address or nickname.                          |
+| /epicguard analyze <nick/address>                | Displays detailed information about the specified address or nickname. |
+| /epicguard status                                | Toggles live attack information on actionbar.                          |
+| /epicguard save                                  | Forces save to the database.                                           |
 
 ## 🔧 Using EpicGuard API in your project:
 The api is not very advanced, and there is not much you can do with it for now.
@@ -70,7 +73,7 @@ repositories {
   mavenCentral()
 }
 dependencies {
-    compileOnly 'com.github.4drian3d:epicguard-api:[VERSION OR COMMIT ID HERE]'
+    compileOnly 'io.github.4drian3d:epicguard-api:[VERSION OR COMMIT ID HERE]'
 }
 ```
 </details>
@@ -88,7 +91,7 @@ dependencies {
   </repositories>
   <dependencies>
       <dependency>
-         <groupId>com.github.4drian3d</groupId>
+         <groupId>io.github.4drian3d</groupId>
          <artifactId>epicguard-api</artifactId>
          <version>[VERSION HERE]</version>
          <scope>provided</scope>
