@@ -9,11 +9,11 @@ paper = "1.20.2-R0.1-SNAPSHOT"
 libby = "1.3.1"
 cloud = "1.8.4"
 configurate = "4.1.2"
-miniplaceholders = "2.2.3"
+miniplaceholders = "3.0.1"
 
 # Plugins
 blossom = "2.1.0"
-shadow = "8.1.1"
+shadow = "9.0.2"
 runtask = "2.3.1"
 plugin-yml = "0.6.0"
 indra = "3.1.3"
@@ -22,7 +22,7 @@ indra = "3.1.3"
 slf4j = "2.0.16"
 log4j2 = "2.24.1"
 
-adventure-api = "4.17.0"
+adventure-api = "4.24.0"
 
 annotations = "26.0.1"
 
@@ -90,7 +90,7 @@ fuzzywuzzy = { module = "me.xdrop:fuzzywuzzy", version.ref = "fuzzywuzzy" }
 [plugins]
 
 blossom = { id = "net.kyori.blossom", version.ref = "blossom" }
-shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
 indra = { id = "net.kyori.indra.publishing", version.ref = "indra" }
 
 # Run Task

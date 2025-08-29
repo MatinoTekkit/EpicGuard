@@ -6,7 +6,7 @@ A simple AntiBot plugin for newest Minecraft versions.
 * [Velocity 3.2+](https://velocitypowered.com/)
 * Waterfall
 * [Sponge](https://spongepowered.org/) (soon)
-* Java **17**
+* Java **21**
 
 [![](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_46h.png)](https://modrinth.com/plugin/epicguard)
 

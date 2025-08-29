@@ -5,7 +5,7 @@ rootProject.name = "EpicGuard"
 
 dependencyResolutionManagement {
     repositories {
-        maven("https://papermc.io/repo/repository/maven-public/")
+        maven("https://repo.papermc.io/repository/maven-public/")
         maven("https://repo.alessiodp.com/releases/")
         maven("https://repo.jpenilla.xyz/snapshots/")
         maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
@@ -13,7 +13,7 @@ dependencyResolutionManagement {
 }
 
 plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
     id("org.spongepowered.gradle.plugin") version "2.2.0"
 }
 
