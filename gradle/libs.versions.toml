@@ -24,7 +24,7 @@ log4j2 = "2.24.1"
 
 adventure-api = "4.24.0"
 
-annotations = "26.0.1"
+annotations = "26.0.2"
 
 sqlite = "3.47.0.0"
 hikaricp = "5.1.0"
