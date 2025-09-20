@@ -51,6 +51,13 @@ final class Libraries {
                 "me{}xneox{}epicguard{}libs{}commons"
         );
         final Library COMMONS_COMPRESS = Library.builder()
+                .groupId("commons-io")
+                .artifactId("commons-io")
+                .version("2.20.0")
+                .id("commons-io")
+                .relocate(commonsRelocation)
+                .build();
+        final Library COMMONS_IO = Library.builder()
                 .groupId("org{}apache{}commons")
                 .artifactId("commons-compress")
                 .version(Constants.COMMANDS_COMPRESS)
@@ -151,6 +158,7 @@ final class Libraries {
                 MYSQL,
                 HIKARI,
                 COMMONS_COMPRESS,
+                COMMONS_IO,
                 COMMONS_TEXT,
                 MAXMIND_GEOIP,
                 MAXMIND_DB,
