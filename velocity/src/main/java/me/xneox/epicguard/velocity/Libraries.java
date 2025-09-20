@@ -51,17 +51,17 @@ final class Libraries {
                 "me{}xneox{}epicguard{}libs{}commons"
         );
         final Library COMMONS_COMPRESS = Library.builder()
-                .groupId("commons-io")
-                .artifactId("commons-io")
-                .version("2.20.0")
-                .id("commons-io")
-                .relocate(commonsRelocation)
-                .build();
-        final Library COMMONS_IO = Library.builder()
                 .groupId("org{}apache{}commons")
                 .artifactId("commons-compress")
                 .version(Constants.COMMANDS_COMPRESS)
                 .id("commons-compress")
+                .relocate(commonsRelocation)
+                .build();
+        final Library COMMONS_IO = Library.builder()
+                .groupId("commons-io")
+                .artifactId("commons-io")
+                .version("2.20.0")
+                .id("commons-io")
                 .relocate(commonsRelocation)
                 .build();
         final Library COMMONS_TEXT = Library.builder()
