@@ -18,7 +18,7 @@ public final class LibraryLoader implements PluginLoader {
         final MavenLibraryResolver resolver = new MavenLibraryResolver();
 
         final RemoteRepository mavenCentral = new RemoteRepository
-                .Builder("central", "default", "https://repo1.maven.org/maven2/")
+                .Builder("central", "default", MavenLibraryResolver.MAVEN_CENTRAL_DEFAULT_MIRROR)
                 .build();
         resolver.addRepository(mavenCentral);
 
