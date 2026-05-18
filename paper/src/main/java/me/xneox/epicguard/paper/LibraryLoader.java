@@ -24,16 +24,14 @@ public final class LibraryLoader implements PluginLoader {
 
         Stream.of(
                 "com.zaxxer:HikariCP:" + Constants.HIKARI,
+                "org.spongepowered:configurate-hocon:" + Constants.CONFIGURATE,
                 "com.github.ben-manes.caffeine:caffeine:" + Constants.CAFFEINE,
-                "org.apache.commons:commons-compress:" + Constants.COMMANDS_COMPRESS,
-                "org.apache.commons:commons-text:" + Constants.COMMONS_TEXT,
+                "org.apache.commons:commons-compress:" + Constants.COMPRESS,
                 "com.maxmind.geoip2:geoip2:" + Constants.GEOIP,
-                "com.maxmind.db:maxmind-db:" + Constants.MAXMIND_DB,
-                "com.fasterxml.jackson.core:jackson-annotations:" + Constants.JACKSON,
-                "com.fasterxml.jackson.core:jackson-core:" + Constants.JACKSON,
-                "com.fasterxml.jackson.core:jackson-databind:" + Constants.JACKSON,
                 "me.xdrop:fuzzywuzzy:" + Constants.FUZZYWUZZY,
-                "cloud.commandframework:cloud-paper:" + Constants.CLOUD
+                "cloud.commandframework:cloud-paper:" + Constants.CLOUD,
+                "com.mysql:mysql-connector-j:" + Constants.MYSQL,
+                "org.xerial:sqlite-jdbc:" + Constants.SQLITE
         )
                 .map(artifact -> new Dependency(new DefaultArtifact(artifact), null))
                 .forEach(resolver::addDependency);

@@ -8,7 +8,6 @@ plugins {
 dependencies {
     compileOnly(libs.geoip)
     compileOnly(libs.commons.compress)
-    compileOnly(libs.commons.text)
     compileOnly(libs.guava)
     compileOnly(libs.caffeine)
     compileOnly(libs.configurate)
@@ -52,12 +51,11 @@ sourceSets {
                 property("configurate", libs.versions.configurate.get())
                 property("caffeine", libs.versions.caffeine.get())
                 property("compress", libs.versions.commons.compress.get())
-                property("text", libs.versions.commons.text.get())
                 property("geoip", libs.versions.geoip.get())
-                property("jackson", libs.versions.jackson.get())
-                property("maxminddb", libs.versions.maxmind.db.get())
                 property("fuzzywuzzy", libs.versions.fuzzywuzzy.get())
                 property("cloud", libs.versions.cloud.get())
+                property("mysql", libs.versions.mysql.get())
+                property("sqlite", libs.versions.sqlite.get())
             }
         }
     }

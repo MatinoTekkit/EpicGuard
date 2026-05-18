@@ -7,11 +7,10 @@ public final class Constants {
     public static final String HIKARI = "{{ hikari }}";
     public static final String CONFIGURATE = "{{ configurate }}";
     public static final String CAFFEINE = "{{ caffeine }}";
-    public static final String COMMONS_TEXT = "{{ text }}";
-    public static final String COMMANDS_COMPRESS = "{{ compress }}";
+    public static final String COMPRESS = "{{ compress }}";
     public static final String GEOIP = "{{ geoip }}";
-    public static final String JACKSON = "{{ jackson }}";
     public static final String FUZZYWUZZY = "{{ fuzzywuzzy }}";
-    public static final String MAXMIND_DB = "{{ maxminddb }}";
     public static final String CLOUD = "{{ cloud }}";
+    public static final String MYSQL = "{{ mysql }}";
+    public static final String SQLITE = "{{ sqlite }}";
 }
